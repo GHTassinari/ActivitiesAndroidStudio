@@ -7,7 +7,9 @@ The project includes a main Activity that leads to three other activities. Here'
 - In the Series Activity, I made a simple copy of a wireframe for a series-watching app, testing placing images and properly managing the ConstraintLayout.
 - In the BestTextActivity, I used the LoremIpsum dependency. The goal was a wireframe to decide which of two texts is better, with buttons linked to a barrier below the text so they adapt dynamically.
 
-Below are three images of the project.
+Below are the images corresponding to each activity:
+
+
 ![project-image-1](./.github/seriesActivity.png)
 ![project-image-2](./.github/blogActivity.png)
 ![project-image-3](./.github/bestTextActivity.png)
