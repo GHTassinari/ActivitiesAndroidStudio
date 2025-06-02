@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/buttonBlogPostNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBlogPostButtons"
+            android:layout_marginBottom="@dimen/marginBlogPost"
+            android:text="@string/blogPostButtonNextText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textViewBlogPostText"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBlogPostText" />
+
+        <Button
+            android:id="@+id/buttonBlogPostPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBlogPostButtons"
+            android:layout_marginEnd="@dimen/marginBlogPost"
+            android:layout_marginBottom="@dimen/marginBlogPost"
+            android:text="@string/blogPostButtonPreviousText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/buttonBlogPostNext"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBlogPostText"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textViewBlogPostTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginBlogPost"
+            android:layout_marginTop="@dimen/marginBlogPost"
+            android:text="@string/textViewBlogPostTitle"
+            android:textSize="@dimen/blogPostTitleTextSize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:contentDescription="@string/blogPostImageContentDescription"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/android_blog_image"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:id="@+id/textViewAuthorBlogPost"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/marginBlogPost"
+            android:layout_marginTop="@dimen/marginBlogPost"
+            android:text="@string/blogPostAuthor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBlogPostTitle" />
+
+        <TextView
+            android:id="@+id/textViewDateBlogPost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBlogPost"
+            android:layout_marginEnd="@dimen/marginBlogPost"
+            android:text="@string/blogPostDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBlogPostTitle" />
+
+        <TextView
+            android:id="@+id/textViewBlogPostText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginBlogPost"
+            android:text="@string/blogPostLoremIpsumText"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDateBlogPost"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textViewAuthorBlogPost"
+            app:layout_constraintTop_toBottomOf="@+id/textViewAuthorBlogPost"
+            tools:ignore="VisualLintLongText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

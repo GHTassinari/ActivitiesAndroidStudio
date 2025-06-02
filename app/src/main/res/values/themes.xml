@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ConstraintLayouts" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/purple</item>
+    </style>
+
+    <style name="Theme.ConstraintLayouts" parent="Base.Theme.ConstraintLayouts" />
+
+    <style name="Theme.SeriesActivityTheme" parent="Base.Theme.ConstraintLayouts">
+        <item name="colorPrimary">@color/red</item>
+    </style>
+</resources>

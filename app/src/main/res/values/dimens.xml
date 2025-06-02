@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginButtonMainPage">128dp</dimen>
+    <dimen name="buttonMainPageWidth">200dp</dimen>
+
+    <dimen name="marginBlogPost">24dp</dimen>
+    <dimen name="blogPostTitleTextSize">20sp</dimen>
+    <dimen name="marginBlogPostButtons">36dp</dimen>
+
+    <dimen name="marginSeriesImage">36dp</dimen>
+    <dimen name="marginSeries">24dp</dimen>
+    <dimen name="marginSeriesSmall">12dp</dimen>
+    <dimen name="marginSeriesButtons">64dp</dimen>
+    <dimen name="textSizeSeries">16sp</dimen>
+    <dimen name="textSizeSeriesSmall">12sp</dimen>
+    <dimen name="seriesImageSize">300dp</dimen>
+    <dimen name="seriesButtonIconsSize">36dp</dimen>
+
+    <dimen name="marginBestText">24dp</dimen>
+    <dimen name="marginSidesBestText">12dp</dimen>
+    <dimen name="marginCenterBestText">16dp</dimen>
+    <dimen name="bestTextTitleTextSize">20sp</dimen>
+    <dimen name="buttonBestTextWidth">100dp</dimen>
+    <dimen name="buttonBestTextFontSize">12sp</dimen>
+</resources>

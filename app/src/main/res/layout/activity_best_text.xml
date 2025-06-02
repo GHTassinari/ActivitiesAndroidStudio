@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewBestTextTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBestText"
+        android:text="@string/textViewTextBestSizeTitle"
+        android:textSize="@dimen/bestTextTitleTextSize"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/groupTextsBestText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="textViewBestTextLeft,textViewBestTextRight"
+        app:layout_constraintEnd_toEndOf="@+id/textViewBestTextRight"
+        app:layout_constraintStart_toStartOf="@+id/textViewBestTextLeft"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBestTextTitle" />
+
+    <TextView
+        android:id="@+id/textViewBestTextLeft"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginSidesBestText"
+        android:layout_marginTop="@dimen/marginBestText"
+        android:layout_marginEnd="@dimen/marginCenterBestText"
+        android:text="@string/randomBestTextLeft"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBestTextTitle" />
+
+    <TextView
+        android:id="@+id/textViewBestTextRight"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginCenterBestText"
+        android:layout_marginTop="@dimen/marginBestText"
+        android:layout_marginEnd="@dimen/marginSidesBestText"
+        android:text="@string/randomBestTextRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineCenter"
+        app:layout_constraintTop_toBottomOf="@+id/textViewBestTextTitle" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrierBottomTexts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="textViewBestTextLeft,textViewBestTextRight" />
+
+    <Button
+        android:id="@+id/buttonEmpate"
+        android:layout_width="@dimen/buttonBestTextWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBestText"
+        android:text="@string/buttonBestTextEmpate"
+        android:textSize="@dimen/buttonBestTextFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/barrierBottomTexts" />
+
+    <Button
+        android:id="@+id/buttonDireita"
+        android:layout_width="@dimen/buttonBestTextWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginSidesBestText"
+        android:layout_marginTop="@dimen/marginBestText"
+        android:text="@string/buttonBestTextDireita"
+        android:textSize="@dimen/buttonBestTextFontSize"
+        app:layout_constraintStart_toEndOf="@+id/buttonEmpate"
+        app:layout_constraintTop_toBottomOf="@id/barrierBottomTexts" />
+
+    <Button
+        android:id="@+id/buttonEsquerda"
+        android:layout_width="@dimen/buttonBestTextWidth"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBestText"
+        android:layout_marginEnd="@dimen/marginSidesBestText"
+        android:text="@string/buttonBestTextEsquerda"
+        android:textSize="@dimen/buttonBestTextFontSize"
+        app:layout_constraintEnd_toStartOf="@+id/buttonEmpate"
+        app:layout_constraintTop_toBottomOf="@id/barrierBottomTexts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray">
+
+    <TextView
+        android:id="@+id/textViewSeriesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSeries"
+        android:text="@string/textViewSeriesName"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeSeries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSeriesName"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="@+id/textViewSeriesName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSeriesName"
+        app:srcCompat="@drawable/baseline_expand_more_24"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/textViewSeriesInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginSeriesSmall"
+        android:text="@string/seriesInfo"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeSeriesSmall"
+        app:layout_constraintEnd_toEndOf="@+id/textViewSeriesName"
+        app:layout_constraintStart_toStartOf="@+id/textViewSeriesName"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <ImageView
+        android:id="@+id/imageViewSeries"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seriesImageSize"
+        android:layout_marginTop="@dimen/marginSeriesImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSeriesInfo"
+        app:srcCompat="@drawable/heartland_image" />
+
+    <SeekBar
+        android:id="@+id/seekBarSeries"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/marginSeriesSmall"
+        android:layout_marginTop="@dimen/marginSeriesImage"
+        android:layout_marginEnd="@dimen/marginSeriesSmall"
+        android:backgroundTint="@color/darkGray"
+        android:progressTint="@color/red"
+        android:thumbTint="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSeries" />
+
+    <TextView
+        android:id="@+id/textViewTimeEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/marginSeriesSmall"
+        android:text="@string/textViewSeriesTimeEnd"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeSeriesSmall"
+        app:layout_constraintEnd_toEndOf="@+id/seekBarSeries"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarSeries" />
+
+    <TextView
+        android:id="@+id/textViewTimeStart"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/marginSeriesSmall"
+        android:text="@string/textViewSeriesTimeStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSizeSeriesSmall"
+        app:layout_constraintStart_toStartOf="@+id/seekBarSeries"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarSeries" />
+
+    <ImageButton
+        android:id="@+id/imageButtonReturn"
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/seriesButtonIconsSize"
+        android:layout_height="@dimen/seriesButtonIconsSize"
+        android:layout_marginTop="@dimen/marginSeries"
+        android:layout_marginEnd="@dimen/marginSeriesButtons"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonPlay"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeStart"
+        app:srcCompat="@drawable/replay_10"
+        app:tint="@color/white"
+        android:scaleType="centerInside"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonPlay"
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/seriesButtonIconsSize"
+        android:layout_height="@dimen/seriesButtonIconsSize"
+        android:layout_marginTop="@dimen/marginSeries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeStart"
+        app:srcCompat="@drawable/play"
+        app:tint="@color/white"
+        android:scaleType="centerInside"
+        />
+
+    <ImageButton
+        android:id="@+id/imageButtonCast"
+        android:background="@android:color/transparent"
+        android:layout_width="@dimen/seriesButtonIconsSize"
+        android:layout_height="@dimen/seriesButtonIconsSize"
+        android:layout_marginStart="@dimen/marginSeriesButtons"
+        android:layout_marginTop="@dimen/marginSeries"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPlay"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTimeStart"
+        app:srcCompat="@drawable/cast"
+        app:tint="@color/white"
+        android:scaleType="centerInside"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

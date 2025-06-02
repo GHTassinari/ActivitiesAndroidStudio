@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">ConstraintLayouts</string>
+    <string name="buttonBlogText">Blog Post</string>
+    <string name="buttonSeriesText">Série</string>
+    <string name="buttontextContestText">Concurso de Textos</string>
+    <string name="textViewBlogPostTitle">Utilizando imagens no android</string>
+    <string name="blogPostAuthor">Guilherme Tassinari</string>
+    <string name="blogPostDate">17/04/2029</string>
+    <string name="blogPostLoremIpsumText" />
+    <string name="blogPostButtonNextText">Próximo</string>
+    <string name="blogPostButtonPreviousText">Anterior</string>
+    <string name="blogPostImageContentDescription">Imagem representativa do android</string>
+    <string name="textViewSeriesName">Heartland</string>
+    <string name="seriesInfo">T10:E08</string>
+    <string name="textViewSeriesTimeEnd">40:00</string>
+    <string name="textViewSeriesTimeStart">20:00</string>
+    <string name="textViewTextBestSizeTitle">Melhor Texto</string>
+    <string name="buttonBestTextEmpate">Empate</string>
+    <string name="buttonBestTextDireita">Direita</string>
+    <string name="buttonBestTextEsquerda">Esquerda</string>
+    <string name="randomBestTextLeft" />
+    <string name="randomBestTextRight" />
+</resources>
